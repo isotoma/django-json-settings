@@ -5,7 +5,7 @@ import logging
 import json
 
 def json_patch(path):
-    logging.warn("Attempting to load local settings from %r" %(path,))
+    logging.info("Attempting to load local settings from %r" %(path,))
     try:
         d = json.load(open(path))
     except IOError:
